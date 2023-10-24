@@ -13,7 +13,7 @@ def perform_calculation():
 def button_click(text):
     if text == "=":
         perform_calculation()
-    elif text == "C":
+    elif text == "C":       # c means clear operation 
         entry.delete(0, tk.END)
     else:
         current_text = entry.get()
@@ -26,16 +26,13 @@ def create_button(root, text, row, col, button_color, font_size=18):
 root = tk.Tk()
 root.geometry("400x550")
 root.title("Calculator")
-
-# Entry widget for input and results
+ 
 entry = tk.Entry(root, font=("Arial", 24), bd=10, insertwidth=4, width=14, justify="right")
 entry.grid(row=0, column=0, columnspan=4)
-
-# Define colors for operation buttons and digit buttons
+ 
 operation_button_color = "green"
 digit_button_color = "lightblue"
-
-# Buttons
+ 
 button_frame = tk.Frame(root)
 button_frame.grid(row=1, column=0)
 
