@@ -32,7 +32,7 @@ entry = tk.Entry(root, font=("Arial", 24), bd=10, insertwidth=4, width=14, justi
 entry.grid(row=0, column=0, columnspan=4)
 
 # Define colors for operation buttons and digit buttons
-operation_button_color = "lightgreen"
+operation_button_color = "green"
 digit_button_color = "lightblue"
 
 # Buttons
